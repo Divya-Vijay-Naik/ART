@@ -1,0 +1,108 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+/* You can also add other global styles here */
+
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Add Disaster Form Styles */
+.add-disaster-form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-disaster-form input,
+.add-disaster-form select,
+.add-disaster-form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.add-disaster-form textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.add-disaster-form button {
+  background-color: #28a745;  /* Green color */
+  color: #fff;
+  padding: 18px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 200px;
+  text-align: center;
+}
+
+.add-disaster-form button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Form Labels */
+.add-disaster-form label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Title for the form */
+.add-disaster-form h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .add-disaster-form {
+    padding: 20px;
+  }
+
+  .add-disaster-form input,
+  .add-disaster-form select,
+  .add-disaster-form textarea {
+    font-size: 1rem;
+  }
+
+  .add-disaster-form button {
+    font-size: 1.1rem;
+    padding: 14px 20px;
+  }
+}
